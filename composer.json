@@ -1,0 +1,41 @@
+{
+    "name": "zorachka/mailer",
+    "description": "Zorachka Mailer",
+    "keywords": [
+        "zorachka",
+        "mailer"
+    ],
+    "homepage": "https://github.com/zorachka/mailer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Siarhei Bautrukevich",
+            "email": "hello@bautrukevich.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "symfony/mailer": "^5.3",
+        "zorachka/container": "^2.0"
+    },
+    "require-dev": {
+        "pestphp/pest": "^1.21",
+        "roave/security-advisories": "dev-latest"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zorachka\\Framework\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Zorachka\\Framework\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
