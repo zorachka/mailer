@@ -15,17 +15,13 @@
         }
     ],
     "require": {
-        "php": "^8.0",
+        "php": "^8.1",
         "symfony/mailer": "^5.3",
-        "zorachka/container": "^2.0"
-    },
-    "require-dev": {
-        "pestphp/pest": "^1.21",
-        "roave/security-advisories": "dev-latest"
+        "zorachka/container": "^3.1"
     },
     "autoload": {
         "psr-4": {
-            "Zorachka\\Framework\\": "src/"
+            "Zorachka\\Framework\\": "src"
         }
     },
     "autoload-dev": {
@@ -34,7 +30,10 @@
         }
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true
